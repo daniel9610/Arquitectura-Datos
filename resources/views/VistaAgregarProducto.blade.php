@@ -202,7 +202,24 @@
                         <input type="number" class="form-control" placeholder="cantidad del producto" name="precioProducto" required autofocus/>
 
                        
-
+                          <br></br>
+                          <label style="color:#000000;font-size: 120%;">ingredientes</label>
+                          <select class="form-control" id="ingredientes" name="ingredientes" multiple/>
+                            @foreach($ingredientes as $ingrediente)
+                                      <option value="{{ $ingrediente->ingrediente }}" {{ $ingrediente->ingrediente == $ingrediente->nombre ? 'selected' : '' }}> {{ $ingrediente->nombre }} </option>
+                            @endforeach
+                          </select> 
+<!-- 
+                              
+<form action="/action_page.php">
+<select name="cars" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<input type="submit">
+</form> -->
 
 
                         <br></br>

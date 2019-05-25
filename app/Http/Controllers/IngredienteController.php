@@ -72,18 +72,3 @@ class IngredienteController extends Controller
 }
 
 
-
-<!-- <br></br>
-<label style="color:#000000;font-size: 120%;">ingredientes</label>
-<select class="form-control" id="ingredientes" name="ingredientes" required autofocus/>
-//  @foreach($ingredientes as $ingrediente)
-//            <option value="{{ $ingrediente->ingrediente }}" {{ $ingrediente->ingrediente == $productos->ingredientes ? 'selected' : '' }}> {{ $ingrediente->ingrediente->nombre }} </option>
-//  @endforeach
-</select> -->
-
-      <!-- <select name="user_to" id="user_to" class="form-control" required>
-      //  @foreach($users as $user)
-      //      <option value="{{ $user->user_id }}" {{ $user->user_id == $task->user_id ? 'selected' : '' }}> {{ $user->user->name }} </option>
-      //  @endforeach
-      </select> -->
-

@@ -9,7 +9,7 @@ use App\menu;
 use App\categoria;
 
 use App\productos;
-
+use App\Ingrediente;
 use Storage;
 
 use Excel;
@@ -35,12 +35,11 @@ class GestorProductos extends Controller
 
 
         $categoria=categoria::all();
-
         $sub_categoria=menu::all();
-
+        $ingredientes = Ingrediente::all();
         $cantidad=session('cantidad');
 
-        return view('VistaAgregarProducto',compact('categoria','sub_categoria','cantidad'));
+        return view('VistaAgregarProducto',compact('categoria','sub_categoria','cantidad', 'ingredientes'));
         
     }
 
